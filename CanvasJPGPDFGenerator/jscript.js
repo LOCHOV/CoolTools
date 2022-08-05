@@ -6,12 +6,12 @@ function canvas(text, img) {
 			ctx.drawImage(img, 0, 0, 826, 1169);
 			ctx.font = "30pt Verdana";
 			ctx.fillText(text, 95, 660);
+			// return image as dataurl formatted
 			img2dataurl = document.getElementById('canvas').toDataURL();
-
 			return img2dataurl;
 		}
 
-		function message_success(){
+function message_success(){
 			// write a message to the user
 			document.getElementById('message').innerHTML = "Text was added to your image";
 			document.getElementById('message').style = "color: green;";
@@ -20,7 +20,7 @@ function canvas(text, img) {
 			document.getElementById('submitpng').className = "button-success";
 		}
 
-		function message_failure(){
+function message_failure(){
 			// write a message to the user
 			document.getElementById('message').innerHTML = "There was an error when loading your file";
 			document.getElementById('message').style = "color: red;";
@@ -29,7 +29,7 @@ function canvas(text, img) {
 			document.getElementById('submitpng').className = "button-danger";
 		}
 
-		function message_noupload(){
+function message_noupload(){
 			// write a message to the user
 			document.getElementById('message').innerHTML = "Please select a file for upload";
 			document.getElementById('message').style = "color: red;";
