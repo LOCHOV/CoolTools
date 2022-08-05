@@ -1,0 +1,23 @@
+	.button-default {
+		border-color: #e7e7e7;
+		background-color: white;
+		color: black;
+	}
+	.button-success {
+		border-color: #04AA6D;
+		background-color: white;
+		color: green;
+	}
+	.button-danger {
+		border-color: #f44336;
+		background-color: white;
+		color: red
+	}
+	.button-warning {
+        border-color: #ff9800;
+        background-color: white;
+        color: orange;
+    }
+	.hidden {
+	    visibility: hidden;
+	}
